@@ -1,4 +1,4 @@
-package com.jomar.ttsexample
+package com.jomar.ttsexample.feature.ui
 
 data class SpeechToTextState(
     val isRecording: Boolean = false,

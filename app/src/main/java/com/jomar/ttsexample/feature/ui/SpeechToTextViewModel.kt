@@ -1,4 +1,4 @@
-package com.jomar.ttsexample
+package com.jomar.ttsexample.feature.ui
 
 import android.content.Context
 import android.media.MediaRecorder
@@ -6,6 +6,10 @@ import android.net.Uri
 import android.util.Base64
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.jomar.ttsexample.feature.domain.RecognitionAudio
+import com.jomar.ttsexample.feature.domain.RecognitionConfig
+import com.jomar.ttsexample.feature.model.GoogleSpeechRequest
+import com.jomar.ttsexample.feature.service.GoogleSpeechApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -32,7 +36,7 @@ class SpeechToTextViewModel : ViewModel() {
         .build()
         .create(GoogleSpeechApi::class.java)
 
-    fun startRecording(context: android.content.Context) {
+    fun startRecording(context: Context) {
         try {
             // Create audio file
             audioFile = File(context.cacheDir, "audio_recording.3gp")
