@@ -1,7 +1,8 @@
 # Speech to Text Android App
 
-Um aplicativo Android moderno desenvolvido com Kotlin e Jetpack Compose que permite transcrever áudio em texto usando a API do Google Speech-to-Text.
-
+App com Kotlin e Jetpack Compose que permite transcrever áudio em texto usando a API do Google
+Speech-to-Text.
+![Home](/img/stt_screen.png)
 ## ✨ Funcionalidades
 
 - 🎤  **Gravação de áudio ao vivo**  - Grave diretamente pelo microfone
